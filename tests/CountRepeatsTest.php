@@ -122,5 +122,17 @@
             $this->assertEquals(4, $result);
         }
 
+        function test_ignore_case()
+        {
+            //Arrange
+            $test_CountRepeats = new CountRepeats;
+            $input1 = 'aBcD';
+            $input2 = 'AbCd';
+            //Act
+            $result = $test_CountRepeats->countRepeatsMethod($input1, $input2);
+            //Assert
+            $this->assertEquals(1, $result);
+        }
+
     }
 ?>
