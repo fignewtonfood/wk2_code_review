@@ -50,5 +50,17 @@
             $this->assertEquals(1, $result);
         }
 
+        function test_two_letter_identical()
+        {
+            //Arrange
+            $test_CountRepeats = new CountRepeats;
+            $input1 = 'ab';
+            $input2 = 'ab';
+            //Act
+            $result = $test_CountRepeats->countRepeatsMethod($input1, $input2);
+            //Assert
+            $this->assertEquals(1, $result);
+        }
+
     }
 ?>
