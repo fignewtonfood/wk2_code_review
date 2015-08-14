@@ -50,7 +50,7 @@
             $this->assertEquals(1, $result);
         }
 
-        function test_two_letter_identical()
+        function test_two_letters_identical()
         {
             //Arrange
             $test_CountRepeats = new CountRepeats;
@@ -60,6 +60,18 @@
             $result = $test_CountRepeats->countRepeatsMethod($input1, $input2);
             //Assert
             $this->assertEquals(1, $result);
+        }
+
+        function test_two_letters_different()
+        {
+            //Arrange
+            $test_CountRepeats = new CountRepeats;
+            $input1 = 'ab';
+            $input2 = 'cd';
+            //Act
+            $result = $test_CountRepeats->countRepeatsMethod($input1, $input2);
+            //Assert
+            $this->assertEquals(0, $result);
         }
 
     }
