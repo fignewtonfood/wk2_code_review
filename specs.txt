@@ -1,0 +1,61 @@
+Plain English specs
+
+1) Compare two exactly identical one letter strings
+Input 1: 'a'
+Input 2: 'a'
+Output: 1
+
+2) Compare two different, one letter strings
+Input 1: 'a'
+Input 2: 'b'
+Output: 0
+
+3) Compare one letter string to two word string
+Input 1: 'a'
+Input 2: 'a b'
+Output: 1
+
+4) Compare one letter string to two word string with intraword match exception
+Input 1: 'a'
+Input 2: 'a ab'
+Output: 1
+
+5) Compare two exactly indentical two letter strings
+Input 1: 'ab'
+Input 2: 'ab'
+Output: 1
+
+6) Compare two different, one letter strings
+Input 1: 'ab'
+Input 2: 'cd'
+Output: 0
+
+7) More than one match to source string
+Input 1: 'a'
+Input 2: 'a b a'
+Output: 2
+
+8) More than two letters as source
+Input 1: 'abcd'
+Input 2: 'abcd efg hi j'
+Output: 1
+
+9) More than two matches
+Input 1: 'a'
+Input 2: 'a a b a b a'
+Output: 4
+
+10) More than 2 letters as source and more than two matches
+Input 1: 'abcd'
+Input 2: 'abcd efg abcd abcd hi j abcd'
+Output: 4
+
+11) Ignore case
+Input 1: 'aBcD'
+Input 2: 'AbCd'
+Output: 1
+
+12) Ignore special characters in second string
+Input 1: 'abcd'
+Input 2: 'Abcd!'
+Output: 1
