@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+        <title>Count Repeats</title>
+    </head>
+    <body>
+        <div class = 'container'>
+            <div class='jumbotron'>
+                <h1>Count Repeats</h1>
+                <h3>Count the number of times that a word appears in a selection of text!</h3>
+            </div>
+        </div>
+        <div class = 'container'>
+            <form action='/results'>
+                <div class='form-group'>
+                    <label for='master'>Type in a word!</label>
+                    <input id='master' name='master' class='form-control' type='text' value='fox'>
+                </div>
+                <div class='form-group'>
+                    <label for='search'>Cut and paste a selection here!</label>
+                    <textarea name='search' rows = '10' cols = '120'>The quick brown fox jumps over the lazy dog.
+                    </textarea>
+                </div>
+                <button type='submit' class='btn-success'>Check!</button>
+            </form>
+        </div>
+    </body>
+</html>
