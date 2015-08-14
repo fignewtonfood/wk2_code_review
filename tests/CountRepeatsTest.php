@@ -98,5 +98,17 @@
             $this->assertEquals(1, $result);
         }
 
+        function test_more_than_two_matches()
+        {
+            //Arrange
+            $test_CountRepeats = new CountRepeats;
+            $input1 = 'a';
+            $input2 = 'a a b a b a';
+            //Act
+            $result = $test_CountRepeats->countRepeatsMethod($input1, $input2);
+            //Assert
+            $this->assertEquals(4, $result);
+        }
+
     }
 ?>
