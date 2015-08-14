@@ -13,5 +13,17 @@
             //Assert
             $this->assertEquals(1, $result);
         }
+
+        function test_one_letter_different()
+        {
+            //Arrange
+            $test_CountRepeats = new CountRepeats;
+            $input1 = 'a';
+            $input2 = 'b';
+            //Act
+            $result = $test_CountRepeats->countRepeatsMethod($input1, $input2);
+            //Assert
+            $this->assertEquals(0, $result);
+        }
     }
 ?>
