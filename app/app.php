@@ -11,7 +11,7 @@
 
     $app->get('/results', function() use ($app){
         $new = new CountRepeats;
-        $count = $new->scrabbleScoreCalculator($_GET['master'],$_GET['search']);
+        $count = $new->countRepeatsMethod($_GET['master'],$_GET['search']);
         return $app['twig']->render('count_results.html.twig', array('count' => $count));
     });
 
