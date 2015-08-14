@@ -1,7 +1,7 @@
 <?php
-class CountRepeats
+class RepeatCounter
 {
-    function countRepeatsMethod($master_string, $search_string)
+    function countRepeats($master_string, $search_string)
     {
       //using a regular expression, ignoring all alphanumeric characters and spaces, replaces all other characters with nothing
         $clean_search_string = preg_replace('/[^A-Za-z0-9\s]/', '', $search_string);
