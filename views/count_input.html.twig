@@ -1,9 +1,11 @@
 <html>
     <head>
+      <!-- linking bootstrap to page -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
         <title>Count Repeats</title>
     </head>
     <body>
+      <!-- jumbotron and container for clean look -->
         <div class = 'container'>
             <div class='jumbotron'>
                 <h1>Count Repeats</h1>
@@ -11,6 +13,7 @@
             </div>
         </div>
         <div class = 'container'>
+          <!-- grabbing data to be analyzed -->
             <form action='/results'>
                 <div class='form-group'>
                     <label for='master'>Type in a word!</label>
@@ -18,6 +21,7 @@
                 </div>
                 <div class='form-group'>
                     <label for='search'>Cut and paste a selection here!</label>
+                  <!-- doesn't look great in the code, but indents must be left out to maintain formatting on homepage -->
                     <textarea name='search' rows = '10' cols = '80' placeholder = 'Once upon a midnight dreary, while I pondered, weak and weary,
 Over many a quaint and curious volume of forgotten lore—
 While I nodded, nearly napping, suddenly there came a tapping,
