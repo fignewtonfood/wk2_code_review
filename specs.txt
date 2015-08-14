@@ -1,61 +1,73 @@
 Plain English specs
 
 1) Compare two exactly identical one letter strings
+--This is the simplest case because the two inputs are the simplest inputs possible (only 1 character each) and they are being compared in the simplest way possible (direct match, no exceptions)
 Input 1: 'a'
 Input 2: 'a'
 Output: 1
 
 2) Compare two different, one letter strings
+--This is the next simplest case because the two inputs are the simplest inputs possible (only 1 character each) and they are being compared in a slightly more complex way (unmatched, no exceptions)
 Input 1: 'a'
 Input 2: 'b'
 Output: 0
 
 3) Compare one letter string to two word string
+--This is the next simplest case because one of the inputs is the simplest possible and the other is not and they are being compared in a slightly more complex way (matched, with multi word search functionality)
 Input 1: 'a'
 Input 2: 'a b'
 Output: 1
 
 4) Compare one letter string to two word string with intraword match exception
+--This is the next simplest case because one of the inputs is the simplest possible and the other is not and they are being compared in a slightly more complex way (matched, while ignoring intraword matches)
 Input 1: 'a'
 Input 2: 'a ab'
 Output: 1
 
 5) Compare two exactly indentical two letter strings
+--This is the next simplest case because the inputs are slightly more complex but they are being compared in the simplest way possible (direct match, no exceptions)
 Input 1: 'ab'
 Input 2: 'ab'
 Output: 1
 
 6) Compare two different, one letter strings
+--This is the next simplest case because the inputs are just as complex as the previous spec but they are being compared in a slightly more complex way (unmatched, no exceptions)
 Input 1: 'ab'
 Input 2: 'cd'
 Output: 0
 
 7) More than one match to source string
+--This is the next simplest case because one of the inputs is the simplest possible and the other is not and they are being compared in a slightly more complex way (matched, while ignoring intraword matches), but this time with more matches (designed to make sure the app can count higher than 1)
 Input 1: 'a'
 Input 2: 'a b a'
 Output: 2
 
 8) More than two letters as source
+--This is the next simplest case because the inputs are even more complex and they are being compared in a simpler way (matched).
 Input 1: 'abcd'
 Input 2: 'abcd efg hi j'
 Output: 1
 
 9) More than two matches
+--This is the next simplest case because the second inputs is even more complex while returning the first to the simplest iteration and they are being compared in a slightly more complex way (matched, more than 2 matches).
 Input 1: 'a'
 Input 2: 'a a b a b a'
 Output: 4
 
 10) More than 2 letters as source and more than two matches
+--This is the next simplest case because it combines the eighth and nineth specs in an attempt to break the app.
 Input 1: 'abcd'
 Input 2: 'abcd efg abcd abcd hi j abcd'
 Output: 4
 
 11) Ignore case
+--This is the next simplest case because it is an exception to the normal rules with a simple solution
 Input 1: 'aBcD'
 Input 2: 'AbCd'
 Output: 1
 
 12) Ignore special characters in second string
+--This is most complex case because it is an exceptions to the normal rules with a more complex solution
 Input 1: 'abcd'
 Input 2: 'Abcd!'
 Output: 1
