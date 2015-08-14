@@ -74,5 +74,17 @@
             $this->assertEquals(0, $result);
         }
 
+        function test_more_than_one_match()
+        {
+            //Arrange
+            $test_CountRepeats = new CountRepeats;
+            $input1 = 'a';
+            $input2 = 'a b a';
+            //Act
+            $result = $test_CountRepeats->countRepeatsMethod($input1, $input2);
+            //Assert
+            $this->assertEquals(2, $result);
+        }
+
     }
 ?>
