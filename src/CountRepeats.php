@@ -5,6 +5,8 @@ class CountRepeats
     {
         if($master_string == $search_string) {
             return 1;
+        } else {
+            return 0;
         }
     }
 }
