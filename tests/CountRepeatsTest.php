@@ -37,5 +37,18 @@
             //Assert
             $this->assertEquals(1, $result);
         }
+
+        function test_one_letter_to_two_word_intraword_exception()
+        {
+            //Arrange
+            $test_CountRepeats = new CountRepeats;
+            $input1 = 'a';
+            $input2 = 'a ab';
+            //Act
+            $result = $test_CountRepeats->countRepeatsMethod($input1, $input2);
+            //Assert
+            $this->assertEquals(1, $result);
+        }
+
     }
 ?>
