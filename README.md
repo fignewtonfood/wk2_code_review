@@ -6,7 +6,7 @@
 
 ## Description
 
-Using PHP and Silex, this app will take a user input string and compare it to another user input string to see if the first string is located within the second. This app uses a Twig framework to display any HTML.
+Using PHP and Silex, this app will take a user input string and compare it to another user input string to see if the first string is located within the second. This app uses a Twig framework and basic CSS to display any HTML.
 
 ## Setup
 
@@ -17,7 +17,7 @@ Using PHP and Silex, this app will take a user input string and compare it to an
 
 ## Technologies Used
 
-This app utilizes PHP, Silex, Twig, and HTML
+This app utilizes PHP, Silex, Twig, CSS, and HTML
 
 ### Legal
 
