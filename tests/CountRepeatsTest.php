@@ -86,5 +86,17 @@
             $this->assertEquals(2, $result);
         }
 
+        function test_more_than_two_letters_as_source()
+        {
+            //Arrange
+            $test_CountRepeats = new CountRepeats;
+            $input1 = 'abcd';
+            $input2 = 'abcd efg hi j';
+            //Act
+            $result = $test_CountRepeats->countRepeatsMethod($input1, $input2);
+            //Assert
+            $this->assertEquals(1, $result);
+        }
+
     }
 ?>
