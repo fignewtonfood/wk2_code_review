@@ -134,5 +134,16 @@
             $this->assertEquals(1, $result);
         }
 
+        function test_ignore_special_characters()
+        {
+            //Arrange
+            $test_CountRepeats = new CountRepeats;
+            $input1 = 'abcd';
+            $input2 = 'Abcd!';
+            //Act
+            $result = $test_CountRepeats->countRepeatsMethod($input1, $input2);
+            //Assert
+            $this->assertEquals(1, $result);
+        }
     }
 ?>
